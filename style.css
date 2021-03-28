@@ -21,3 +21,26 @@ body {
     align-items: center;
     justify-content: center;
 }
+.main-wrapper{
+    max-width: 1080px;
+    background: #fff;
+    width: 480px;
+    height: 620px;
+}
+.bmi-heads{
+    background: var(--mageenta);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.bmi-heads .bmi-heads{
+    padding: 1rem 1.6rem;
+    width: 100%;
+    cursor: pointer;
+}
+.active-head{
+    background: #000;
+}
+.bmi-content{
+    padding: 2rem;
+}
