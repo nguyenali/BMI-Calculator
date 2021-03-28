@@ -13,6 +13,7 @@
 body {
     font-family: 'Lato', sans-serif;
     background: var(--tyrian-purple);
+    font-size: 1.2rem;
     color: rgba(0,0,0,0.9);
 }
 .container{
@@ -43,4 +44,50 @@ body {
 }
 .bmi-content{
     padding: 2rem;
+}
+.form-group{
+    padding: 0.55rem 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+.form-group.col-3{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    align-items: center;
+}
+.form-control{
+    width: 100%;
+    font-size: 1.15rem;
+    font-family: inherit;
+    padding: 0.6rem 1.2rem;
+    margin: 0.2rem 0;
+    border: 1.5px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+.form-control:focus{
+    outline: 0;
+}
+.form-control::placeholder{
+    text-align: right;
+    opacity: 0.6;
+}
+.btns{
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btns .btn{
+    width: 140px;
+    margin: 0 0.5rem;
+    padding: 0.8rem 0;
+    font-family: inherit;
+    font-size: 1.15rem;
+    border: none;
+    background: var(--mageenta);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    letter-spacing: 0.5px;
 }
