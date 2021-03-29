@@ -3,3 +3,10 @@ const BMI_USC = document.getElementById('bmi-usc');
 const BMI_SI = document.getElementById('bmi-si');
 const CALC_BTN = document.getElementById('calc-btn');
 const CLR_BTN = document.getElementById('clr-btn');
+
+//event listeners
+
+window.addEventListener('DOMContentLoaded', () => {
+    BMI_USC.classList.add('show-bmi');
+    activeForm = "bmi-usc";
+});
