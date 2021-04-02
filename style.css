@@ -126,3 +126,6 @@ body {
 #bmi-category{
     color: var(--magenta);
 }
+#bmi-gender{
+    text-transform: capitalize;
+}
