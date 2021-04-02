@@ -18,8 +18,16 @@ BMI_HEADS.forEach(bmiHead => {
             removeActiveClass();
             bmiHead.classList.add('active-head');
             BMI_USC.classList,remove('show-bmi');
-            BMI_SI.add('show-bmi');
+            BMI_SI.classList.add('show-bmi');
             activeForm = "bmi-si";
         }
-    })
-})
+    });
+});
+
+
+//remove active class from heads
+function removeActiveClass(){
+    BMI_HEADS.forEach(bmiHead => {
+        bmiHead.classList.remove('active-head');
+    });
+}
