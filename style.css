@@ -92,4 +92,37 @@ body {
     letter-spacing: 0.5px;
 }
 
-,btns.btn:hover
+.btns.btn:hover{
+    outline: 0;
+    opacity: 0.9;
+}
+
+.btn .btn:focus{
+    outline: 0;
+}
+
+#bmi-usc, #bmi-si{
+    display: none;
+}
+
+/* js related */
+
+.show-bmi{
+    display: block!important;
+}
+.alert-error{
+    text-align: center;
+    padding: 1rem 1.6rem 0;
+    color: var(--magenta);
+    display: none;
+}
+.bmi-output{
+    padding: 1rem 1.6rem;
+    text-align: center;
+}
+#bmi-value{
+    padding-bottom: 0.4rem;
+}
+#bmi-category{
+    color: var(--magenta);
+}
