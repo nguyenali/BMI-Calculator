@@ -35,10 +35,10 @@ function removeActiveClass(){
     });
 }
 
-//main bmi calculation function
-
+// main bmi calculation function
 function performBMICalc(){
-    
+    let BMIInfo = getUserInput();
+    if(BMIInfo) printBMIResult(BMIInfo);
 }
 
 // get input values
