@@ -64,7 +64,7 @@ function getUserInput(){
         }
     }
 
-    // get input values form metric units
+    // get input values from metric units
     if(activeForm === "bmi-si"){
         let age = document.getElementById('age2').value,
         gender = document.querySelector('#bmi-si input[name = "gender"]:checked').value,
@@ -88,4 +88,11 @@ function getUserInput(){
         document.querySelector('.alert-error').style.display = "none";
     }, 1000);
     return false;
+}
+
+function checkInputStatus(inputs){
+    for(let i = 0; i < inputs.length; i++){
+        if(inputs[i].trim() === "" || isNaN(inputs[i])) return false;
+    }
+    return true;
 }
